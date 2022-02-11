@@ -18,6 +18,16 @@
   url: /media/
   url_en: /en/media/
   urlclass: /media.html
+- name: Regie
+  name_en: Staging
+  url: /regie/
+  url_en: /en/staging/
+  urlclass: /regie.html
+- name: Don Quichot
+  name_en: Don Quixote
+  url: /donquichot/
+  url_en: /en/donquixote/
+  urlclass: /donquichot.html
 - name: Contact
   name_en: Contact
   url: /contact/
