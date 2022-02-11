@@ -3,9 +3,8 @@
 #   repo: DaanBoertien/First-Jekkyl-website
 
 backend:
-  name: github
-  branch: master
-  repo: DaanBoertien/First-Jekkyl-website
+  name: git-gateway
+  branch: main
 
 # backend:
 #   name: git-gateway
