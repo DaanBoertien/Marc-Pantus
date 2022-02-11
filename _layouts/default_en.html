@@ -22,6 +22,7 @@
 
       gtag("config", "UA-135437368-1");
     </script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body {% if page.url !="/" %}class="border-top" {% endif %}>
     {% include nav_en.html %}{% include navdesktop_en.html %}
@@ -37,6 +38,17 @@
       integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
       crossorigin="anonymous"
     ></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 
     <script src="{{site.baseurl}}assets/js/hamburger.js"></script>
     <script src="{{site.baseurl}}assets/js/animations.js"></script>
