@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naam | Instrument</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <!-- Choose Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Get Google Analytics! -->
+    <script async src=""></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-135437368-1");
+    </script>
+  </head>
+
+  <body class="">
+    <nav>
+         <ul class="nl">
+            
+                <li class="fadeInNav">
+                    <a href="/"  
+                     >Home</a>
+                    
+                </li>
+            
+                <li class="fadeInNav">
+                    <a href="/biografie/"  
+                     >Biografie</a>
+                    
+                </li>
+            
+                <li class="fadeInNav">
+                    <a href="/concerts/"  
+                     >Agenda</a>
+                    
+                </li>
+            
+                <li class="fadeInNav">
+                    <a href="/media/"  
+                     >Media</a>
+                    
+                </li>
+            
+                <li class="fadeInNav">
+                    <a href="/contact/"  
+                    class="current" >Contact</a>
+                    
+                </li>
+            
+                <li class="fadeInNav"><a href="/" class="current">NL</a>  <a href="/en/" class="">EN</a></li>
+            
+        </ul>
+        
+</nav>
+
+
+<div class="container-without-padding">
+    <div class="hamburger-container">
+        <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box"></span>
+              <span class="hamburger-inner hamburger-black"></span>
+            
+          </button>
+    </div>
+</div> <div class="container navcontainer">
+  <div class="navdesktop">
+    <ul class="nl">
+      
+      <li class="fadeInTitle">
+        <a
+          href="/"
+          class="navblack "
+          >Home</a
+        >
+      </li>
+      
+      <li class="fadeInTitle">
+        <a
+          href="/biografie/"
+          class="navblack "
+          >Biografie</a
+        >
+      </li>
+      
+      <li class="fadeInTitle">
+        <a
+          href="/concerts/"
+          class="navblack "
+          >Agenda</a
+        >
+      </li>
+      
+      <li class="fadeInTitle">
+        <a
+          href="/media/"
+          class="navblack "
+          >Media</a
+        >
+      </li>
+      
+      <li class="fadeInTitle">
+        <a
+          href="/contact/"
+          class="navblack current "
+          >Contact</a
+        >
+      </li>
+      
+      <li class="fadeInTitle">
+        <a href="/" class="current">NL</a>
+        <a href="/en/" class="navblack">EN</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="container"><!-- Maak adminpagina voor contact -->
+<div class="container">
+  <section>
+    <h1 class="fadeIn">Contact</h1>
+    <p class="fadeIn">Contact now!</p>
+
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      action="/success/"
+      class="fadeIn"
+    >
+      <label for="name">Naam</label>
+      <input type="text" id="name" name="name" autofocus />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+      <label for="message">Bericht</label>
+      <textarea rows="4" cols="50" name="message"></textarea>
+      <input type="submit" value="Verzend" />
+    </form>
+  </section>
+</div>
+</div>
+    <section class="footer fadeIn">
+  <div class="container">
+    <p class="">© Daan Boertien | 2021</p>
+  </div>
+</section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+      integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/assets/js/hamburger.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    <script src="/assets/js/media.js"></script>
+  </body>
+</html>

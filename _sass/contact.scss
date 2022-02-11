@@ -1,0 +1,48 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 500px;
+}
+
+button[type="submit"],
+input,
+textarea {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  border: 0;
+
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+textarea {
+  margin-bottom: 2em;
+  resize: vertical;
+  min-height: 100px;
+}
+
+label {
+  margin-bottom: 0.2em;
+}
+
+input[type="submit"] {
+  padding: 0.75em 0;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+}
+
+.contact-invitation {
+}

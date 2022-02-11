@@ -1,0 +1,16 @@
+---
+layout: default_en
+title: Biography
+---
+
+<section class="">
+  <h1 class="fadeIn">Biography</h1>
+
+  <div class="">
+    {% for alinea in site.data.biografie.main %} {% if alinea.alinea-en %}
+    <p class="fadeIn">{{ alinea.alinea-en }}</p>
+    {% endif %} {% endfor %}
+  </div>
+</div>
+</div>
+</section>

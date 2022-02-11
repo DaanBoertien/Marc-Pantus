@@ -1,0 +1,124 @@
+body {
+  position: relative;
+}
+
+nav {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // transform: translateX(100%);
+  opacity: 0;
+  // transition: all 0.4s ease-in-out;
+}
+
+nav a,
+.navdesktop a {
+  color: rgba(0, 0, 0, 0.7);
+  background: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navdesktop a {
+  color: white;
+}
+
+.navdesktop a.navblack {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navdesktop a.navblack.current {
+  color: var(--clr-primary);
+}
+
+nav a::before,
+.navdesktop a::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  // background: var(--red);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::before,
+nav a:focus::before,
+.navdesktop a:hover::before,
+.navdesktop a:focus::before {
+  transform: scale(0.95);
+}
+
+nav a:hover,
+nav a:focus,
+.navdesktop a:hover,
+.navdesktop a:focus {
+  color: var(--clr-secondary);
+}
+
+nav .current,
+.navdesktop .current {
+  color: var(--primary);
+  font-weight: 400;
+}
+
+.navdesktop a.current {
+  color: var(--primary);
+  font-weight: 400;
+}
+
+nav ul {
+  // background: blue;
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+nav li,
+.navdesktop li {
+  list-style: none;
+}
+
+.hamburger-container {
+  position: relative;
+}
+
+.hamburger {
+  position: fixed;
+  top: 1.5em;
+  right: 1.5em;
+  z-index: 11;
+  background: var(--bg-color);
+  opacity: 0.8;
+  box-shadow: var(--boxshadow);
+  border-radius: 3px;
+  // transition: transform 0.7s ease-out;
+}
+
+.hamburger-black,
+.hamburger-black::before,
+.hamburger-black::after {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+  text-align: center;
+  padding: 2em;
+  color: rgba(0, 0, 0, 0.5);
+}

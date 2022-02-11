@@ -1,0 +1,58 @@
+---
+# front matter tells Jekyll to process Liquid
+layout: default_en
+---
+
+<section class="fadeIn">
+
+    <!-- <img src="/assets/img/HierFoto.jpg" alt="" class=""> -->
+
+    
+
+      <h1 class="">Daan Boertien</h1>
+
+
+</section>
+
+
+  <section class="fadeIn">
+
+    <p class="bio-teaser fadeIn nl">
+      {{ site.data.home.bio-teaser-en | markdownify }}
+    </p>
+
+    <p>
+      <a href="/biografie/" class="btn">Lees meer</a>
+    </p>
+  
+  </section>
+
+  <section class="fadeIn">
+    <!-- Check iframe classes -->
+    <div class="iframe-container">
+      <iframe class="iframe"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/{{site.data.home.youtube-id}}"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <a href="/media/" class="btn">Meer video's</a>
+  </section>
+
+
+<section class="fadeIn">
+    <img
+    
+      src="{{ site.data.home.last-image }}"
+      alt=""
+    />
+    <p class="">© {{ site.data.home.photographer }}</p>
+  </div>
+  
+</section>
+
+
+
+

@@ -1,0 +1,89 @@
+// .media-titles {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .media-video {
+//   margin-bottom: 1.5em;
+//   background: transparent;
+//   position: relative;
+// }
+
+// .media-video-margin {
+//   margin-bottom: 1.5em;
+// }
+
+// .videobackground {
+//   background-image: linear-gradient(
+//     212deg,
+//     rgb(206, 206, 206) 0%,
+//     rgb(102, 102, 102) 93%
+//   );
+// }
+
+// .photographer {
+//   position: absolute;
+//   bottom: 0.5em;
+//   right: 1em;
+//   color: white;
+//   text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+//   // opacity: 0.85;
+// }
+
+// .boxshadow {
+//   box-shadow: var(--boxshadow);
+// }
+
+// .all-items {
+//   margin-bottom: 1.5em;
+// }
+
+// .photo-box {
+//   -webkit-backface-visibility: hidden;
+//   -webkit-transform: translate3D(0, 0, 0);
+// }
+
+// #fotos {
+//   padding-top: 0.75em;
+// }
+
+// .modal {
+//   background: rgba(0, 0, 0, 0.5);
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   z-index: 10000;
+//   color: red;
+//   opacity: 0;
+//   pointer-events: none;
+//   transition: all 0.4s ease-in-out;
+//   padding: 2em;
+// }
+
+// .modal img {
+//   height: 100%;
+//   width: auto;
+// }
+
+// .modal-open {
+//   pointer-events: all;
+//   opacity: 1;
+// }
+
+// .photo-box {
+//   overflow: hidden;
+//   transition: transform 0.3s ease-in-out;
+// }
+
+// .photo-box img {
+//   transition: transform 0.3s ease-in-out;
+// }
+
+// .photo-box img:hover {
+//   transform: scale(1.05);
+// }

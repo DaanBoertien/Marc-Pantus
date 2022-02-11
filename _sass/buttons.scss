@@ -1,0 +1,15 @@
+.btn {
+  border: 2px solid var(--clr-primary);
+
+  display: block;
+  padding: 0.7em 1.5em;
+  border-radius: 100px;
+  font-family: inherit;
+  display: block;
+  text-decoration: none;
+  width: max-content;
+}
+
+.btn:hover,
+.btn:focus {
+}

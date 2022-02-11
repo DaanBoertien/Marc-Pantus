@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<!-- Maak adminpagina voor contact -->
+<div class="container">
+  <section>
+    <h1 class="fadeIn">Contact</h1>
+    <p class="fadeIn">{{site.data.contact.content-en}}</p>
+
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      action="/success/"
+      class="fadeIn"
+    >
+      <label for="name">Naam</label>
+      <input type="text" id="name" name="name" autofocus />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+      <label for="message">Bericht</label>
+      <textarea rows="4" cols="50" name="message"></textarea>
+      <input type="submit" value="Verzend" />
+    </form>
+  </section>
+</div>

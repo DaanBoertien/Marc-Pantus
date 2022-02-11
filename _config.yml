@@ -1,0 +1,8 @@
+baseurl: "/"
+
+collections:
+  concerts:
+
+permalink: pretty
+
+timezone: Europe/Amsterdam

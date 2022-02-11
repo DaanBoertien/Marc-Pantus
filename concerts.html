@@ -1,0 +1,59 @@
+---
+layout: default
+title: concerts
+---
+
+<h1 class="">Agenda</h1>
+
+{% assign future_concerts = site.concerts | where_exp: "concert", "concert.date
+>= site.time" %} {% for concert in future_concerts %}
+<div class="concert-poster">
+  <div class="concert-datetime">
+    <p class="concert-date">{{concert.date | date: "%e-%m-%Y"}}</p>
+    <!-- Separate date and time -->
+    <p class="concert-time">{{concert.date | date: "%k:%M" }}</p>
+  </div>
+  <div class="concert-location">
+    <p class="concert-hall">{{concert.hall}}</p>
+    <p class="concert-place">{{concert.place}}</p>
+    <p class="concert-repertoire">{{concert.repertoire}}</p>
+    <p class="concert-musicians">{{concert.musicians }}</p>
+    {% if concert.organizer_url %}
+    <p class="concert-tickets">
+      <a href="{{concert.organizer_url}}" target="_blank" class="btn"
+        >Tickets</a
+      >
+    </p>
+    {% endif %} {% if concert.cancelled %}
+    <p class="concert-cancelled">Geannuleerd</p>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<h2 class="">Archief</h2>
+{% assign past_concerts = site.concerts | where_exp: "concert", "concert.date <
+site.time" | reverse %} {% for concert in past_concerts %} {% if
+concert.in_archive == true %}
+<div class="concert-poster fadeIn">
+  <div class="archive">
+    <div class="concert-datetime">
+      <p class="concert-date">{{concert.date | date: "%e-%m-%Y" }}</p>
+      <p class="concert-time">{{concert.date | date: "%k:%M" }}</p>
+    </div>
+    <div class="concert-location">
+      <p class="concert-hall">{{concert.hall}}</p>
+      <p class="concert-place">{{concert.place}}</p>
+      <p class="concert-repertoire">{{concert.repertoire}}</p>
+      <p class="concert-musicians">{{concert.musicians }}</p>
+      {% if concert.organizer_url %}
+      <a href="{{concert.organizer_url}}" class="concert-tickets btn"
+        >Meer informatie</a
+      >
+      {% endif %} {% if concert.cancelled %}
+      <p class="concert-cancelled">Geannuleerd</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %} {% endfor %}

@@ -1,0 +1,220 @@
+# backend:
+#   name: github
+#   repo: DaanBoertien/First-Jekkyl-website
+
+backend:
+  name: github
+  branch: master
+  repo: DaanBoertien/First-Jekkyl-website
+
+# backend:
+#   name: git-gateway
+#   branch: master
+
+media_folder: assets/img/uploads/
+
+collections:
+  - name: "concerts"
+    label: "Concerts"
+    label_singular: "Concert"
+    folder: "_concerts/"
+    create: true
+    sortable_fields: ["date"]
+    summary: "{{day}}-{{month}}-{{year}}: {{hall}}, {{place}}"
+    slug: "{{day}}-{{month}}-{{year}}-{{hall}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "concert",
+        }
+      - { label: "Zaal (NL)", name: "hall", widget: "string" }
+      - {
+          label: "Hall (EN)",
+          name: "hall_en",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Datum",
+          name: "date",
+          widget: "datetime",
+          date_format: "DD-MM-YYYY",
+          time_format: "HH:mm",
+        }
+
+      - { label: "Plaats (NL)", name: "place", widget: "string" }
+      - {
+          label: "Place (EN)",
+          name: "place_en",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Repertoire (NL)", name: "repertoire", widget: "text" }
+      - {
+          label: "Repertoire (EN)",
+          name: "repertoire_en",
+          widget: "text",
+          required: false,
+        }
+      - { label: "Musici (NL)", name: "musicians", widget: "text" }
+      - {
+          label: "Musicians (EN)",
+          name: "musicians_en",
+          widget: "text",
+          required: false,
+        }
+      - {
+          label: "Link naar organisator",
+          name: "organizer_url",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "In archief",
+          name: "in_archive",
+          widget: "boolean",
+          default: true,
+          required: false,
+        }
+      - {
+          label: "Geannuleerd",
+          name: "cancelled",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+
+  - name: "media"
+    label: "Media"
+    files:
+      - name: "videos"
+        label: "Video's"
+        file: "_data/videos.yml"
+        editor:
+          preview: false
+        fields:
+          - label: "Video's"
+            label_singular: "Video"
+            name: "video"
+            widget: "list"
+            add_to_top: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "YouTube Id"
+                name: "youtube-id"
+                widget: "string"
+      - name: "photos"
+        label: "Foto's"
+        file: "_data/photos.yml"
+        editor:
+          preview: false
+        fields:
+          - label: "Foto's"
+            label_singular: "Foto"
+            name: "foto"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            add_to_top: true
+            fields:
+              - label: "Foto"
+                name: "url"
+                widget: "image"
+              - label: "Alt tekst"
+                name: "alt"
+                widget: "string"
+              - label: "Fotograaf"
+                name: "photographer"
+                widget: "string"
+                required: false
+  - name: "content"
+    label: "Teksten"
+    files:
+      - name: "home"
+        label: "Home"
+        file: "_data/home.yml"
+        editor:
+          preview: false
+        fields:
+          - label: "Site Title"
+            name: "site-title"
+            widget: "string"
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Biografie Teaser (NL)"
+            name: "bio-teaser"
+            widget: "text"
+          - label: "Biography teaser (EN)"
+            name: "bio-teaser-en"
+            widget: "text"
+          - label: "YouTube ID"
+            name: "youtube-id"
+            widget: "string"
+          - label: "Quote (NL)"
+            name: "quote"
+            widget: "text"
+          - label: "Quote (EN)"
+            name: "quote-en"
+            widget: "text"
+          - label: "Quote Author"
+            name: "quote-author"
+            widget: "string"
+          - label: "Foto"
+            name: "last-image"
+            widget: "image"
+          - label: "Fotograaf"
+            name: "photographer"
+            widget: "string"
+          - label: "Footer"
+            name: "footer-text"
+            widget: "string"
+      - name: "biografie"
+        label: "Biografie"
+        file: "_data/biografie.yml"
+        editor:
+          preview: false
+        fields:
+          - label: "Biografie NL+EN"
+            name: "main"
+            widget: "list"
+            fields:
+              - label: "Alinea (NL)"
+                name: "alinea-nl"
+                widget: "text"
+              - label: "Alinea (EN)"
+                name: "alinea-en"
+                widget: "text"
+          - label: "Quote (NL)"
+            name: "quote-nl"
+            widget: "text"
+          - label: "Quote (EN)"
+            name: "quote-en"
+            widget: "text"
+          - label: "Quote Author"
+            name: "quote-author"
+            widget: "string"
+          - label: "Foto"
+            name: "image"
+            widget: "image"
+          - label: "Fotograaf"
+            name: "photographer"
+            widget: "string"
+      - name: "contact"
+        label: "Contact"
+        file: "_data/contact.yml"
+        editor:
+          preview: false
+        fields:
+          - label: "Content"
+            name: "content"
+            widget: "string"
+          - label: "Content EN"
+            name: "content-en"
+            widget: "string"
