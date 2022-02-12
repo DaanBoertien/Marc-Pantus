@@ -5,12 +5,13 @@
   padding: 0.4em 0.8em;
   border-radius: 3px;
   font-family: inherit;
+  font-size: inherit;
   display: block;
   text-decoration: none;
   width: max-content;
   color: black;
   text-transform: lowercase;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   transition: all 0.3s ease-out;
 }
 
