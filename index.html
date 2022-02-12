@@ -8,11 +8,10 @@ absolute_path_en: /en/
 <section>
   <p class="quote">{{site.data.home.quote}}</p>
   <p>{{site.data.home.quote-author}}</p>
-
 </section>
 
 <section class="concert-preview">
-  <h2 class="section-title">Volgend concert</h2>
+  <h2 class="section-title">volgend concert</h2>
 
   {% assign future_concerts = site.concerts | where_exp: "concert",
   "concert.date >= site.time" %} {% for concert in future_concerts limit:1 %}
@@ -42,44 +41,33 @@ absolute_path_en: /en/
   <a href="/media/" class="btn fadeInAppear">Meer concerten</a>
 </section>
 
-  <section class="">
+<section class="">
+  <h2 class="section-title">biografie</h2>
+  <div class="fadeIn">{{ site.data.home.bio-teaser | markdownify }}</div>
 
-    <div class="fadeIn">
-      {{ site.data.home.bio-teaser | markdownify }}
-    </div>
-
-    <p>
-      <a href="/biografie/" class="btn fadeInAppear">Lees meer</a>
-    </p>
-  
-  </section>
-
-  <section class="">
-    <!-- Check iframe classes -->
-    <div class="iframe-container fadeInAppear">
-      <iframe class="iframe"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/{{site.data.home.youtube-id}}"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <a href="/media/" class="btn fadeInAppear">Meer video's</a>
-  </section>
-
-
-<section class="section-image fadeIn">
-    <img
-    
-      src="{{ site.data.home.last-image }}"
-      alt=""
-    />
-    <p class="photographer fadeInAppear">© {{ site.data.home.photographer }}</p>
-  </div>
-  
+  <p>
+    <a href="/biografie/" class="btn fadeInAppear">Lees meer</a>
+  </p>
 </section>
 
+<section class="">
+  <!-- Check iframe classes -->
+  <div class="iframe-container fadeInAppear">
+    <iframe
+      class="iframe"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/{{site.data.home.youtube-id}}"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <p class="video-caption">{{site.data.home.video-caption}}</p>
+  <a href="/media/" class="btn fadeIn">Meer video's</a>
+</section>
 
-
-
+<section class="section-image fadeIn">
+  <img src="{{ site.data.home.last-image }}" alt="" />
+  <p class="photographer fadeInAppear">© {{ site.data.home.photographer }}</p>
+</section>
+<a href="/media/" class="btn fadeIn">Meer foto's</a>

@@ -1,5 +1,5 @@
-:root { --container-width: 960px; --bg-color: rgb(255, 255, 255); --clr-secondary: rgb(79, 112, 134); --clr-primary: rgb(7, 107, 32); --text-color: rgba(0, 0, 0, 0.85); --boxshadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; }
+:root { --container-width: 960px; --bg-color: rgb(255, 255, 255); --clr-secondary: rgb(79, 112, 134); --clr-primary: rgb(7, 107, 32); --text-color: rgba(0, 0, 0, 0.85); --boxshadow: rgba(60, 64, 67, 0.15) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.1) 0px 2px 6px 2px; }
 
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */
 .hamburger { padding: 15px 15px; display: inline-block; cursor: pointer; transition-property: opacity, filter; transition-duration: 0.15s; transition-timing-function: linear; font: inherit; color: inherit; text-transform: none; background-color: transparent; border: 0; margin: 0; overflow: visible; }
@@ -457,7 +457,7 @@ nav li, .navdesktop li { list-style: none; }
 
 .landing-title, .landing-subtitle-container { position: absolute; color: white; }
 
-.landing-title { visibility: hidden; }
+.landing-title { visibility: hidden; text-transform: uppercase; letter-spacing: 1px; }
 
 .landing-subtitle { margin-bottom: 0; visibility: hidden; }
 
@@ -467,7 +467,7 @@ nav li, .navdesktop li { list-style: none; }
 
 .quote { margin-bottom: 0; line-height: 1; font-style: italic; }
 
-.concert-poster { background-color: #dbf0db; padding: 1em; margin-bottom: 1em; }
+.concert-poster { background-color: #f8faf8; padding: 1em; margin-bottom: 1em; box-shadow: var(--boxshadow); }
 
 .concert-date { margin-bottom: 0; color: var(--clr-primary); font-weight: bold; }
 
@@ -478,6 +478,8 @@ nav li, .navdesktop li { list-style: none; }
 .section-image { position: relative; }
 
 .photographer { position: absolute; bottom: 0em; left: 0.5em; color: white; text-shadow: 1px 1px 1px #000; }
+
+.section-image { margin-bottom: 1em; }
 
 form { display: flex; flex-direction: column; margin-top: 2em; margin-bottom: 2em; max-width: 500px; }
 
