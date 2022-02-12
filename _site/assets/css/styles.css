@@ -455,7 +455,9 @@ nav li, .navdesktop li { list-style: none; }
 
 .landing-title, .landing-subtitle-container { position: absolute; color: white; }
 
-.landing-subtitle { margin-bottom: 0; }
+.landing-title { visibility: hidden; }
+
+.landing-subtitle { margin-bottom: 0; visibility: hidden; }
 
 .landing-title { top: 10%; left: 20%; font-weight: 300; font-size: 1.5em; }
 
