@@ -31,3 +31,19 @@ function animate(enterClass){
     })
   
 }
+
+
+const landingImage = document.querySelector(".parallax-container");
+
+if (document.querySelector(".parallax")) {
+  gsap.to(".parallax", {
+    yPercent: -250,
+    ease: "Power3.out",
+    scrollTrigger: {
+      trigger: landingImage,
+      start: "bottom bottom", 
+      end: "bottom top",
+      scrub: true
+    }, 
+  });
+}

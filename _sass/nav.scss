@@ -3,7 +3,6 @@ body {
 }
 
 nav {
-  background: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -22,7 +21,7 @@ nav {
 nav a,
 .navdesktop a {
   color: rgba(0, 0, 0, 0.7);
-  background: white;
+  // background: white;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -53,7 +52,6 @@ nav a::before,
   left: 0;
   right: 0;
   height: 1.5px;
-  // background: var(--red);
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
