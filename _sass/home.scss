@@ -1,0 +1,19 @@
+.landing {
+  position: relative;
+}
+
+.landing-title,
+.landing-subtitle-container {
+  position: absolute;
+  color: white;
+}
+
+.landing-title {
+  top: 10%;
+  left: 20%;
+}
+
+.landing-subtitle-container {
+  right: 20%;
+  top: 50%;
+}

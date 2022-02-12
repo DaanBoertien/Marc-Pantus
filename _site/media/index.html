@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naam | Instrument</title>
+    <title>Marc Pantus | Bas-bariton</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <!-- Choose Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
       rel="stylesheet"
     />
 
@@ -23,6 +25,7 @@
 
       gtag("config", "UA-135437368-1");
     </script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 
   <body class="">
@@ -50,6 +53,18 @@
                 <li class="fadeInNav">
                     <a href="/media/"  
                     class="current" >Media</a>
+                    
+                </li>
+            
+                <li class="fadeInNav">
+                    <a href="/regie/"  
+                     >Regie</a>
+                    
+                </li>
+            
+                <li class="fadeInNav">
+                    <a href="/donquichot/"  
+                     >Don Quichot</a>
                     
                 </li>
             
@@ -112,6 +127,22 @@
       
       <li class="fadeInTitle">
         <a
+          href="/regie/"
+          class="navblack "
+          >Regie</a
+        >
+      </li>
+      
+      <li class="fadeInTitle">
+        <a
+          href="/donquichot/"
+          class="navblack "
+          >Don Quichot</a
+        >
+      </li>
+      
+      <li class="fadeInTitle">
+        <a
           href="/contact/"
           class="navblack "
           >Contact</a
@@ -125,8 +156,7 @@
     </ul>
   </div>
 </div>
-
-    <div class="container"><div class="">
+ <div class="container"><div class="">
   <ul class="">
     
     <div class="">
@@ -135,7 +165,7 @@
           class=""
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/krrw7utSaio"
+          src="https://www.youtube.com/embed/GU4SB-EfG_0"
           frameborder="0"
           allowfullscreen
         ></iframe>
@@ -148,7 +178,20 @@
           class=""
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/fcfU1_gskF8"
+          src="https://www.youtube.com/embed/GFxRCnmUlVw"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </li>
+    </div>
+    
+    <div class="">
+      <li class="">
+        <iframe
+          class=""
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/vc8yehnYTYM"
           frameborder="0"
           allowfullscreen
         ></iframe>
@@ -161,32 +204,22 @@
 <div class="">
   
   <div class="">
-    <img src="/assets/img/uploads/DaanBoertienSebastianGaltier.jpg" alt="Portret Daan" />
+    <img src="/assets/img/uploads/marc6.jpg" alt="Portret Marc Pantus" />
     
-    <p class="">© Sebastian Galtier</p>
-    
-  </div>
-  
-  <div class="">
-    <img src="/assets/img/uploads/prinsengrachtconcert.png" alt="Prinsengrachtconcert" />
+    <p class="">© Candide Rietdijk</p>
     
   </div>
   
   <div class="">
-    <img src="/assets/img/uploads/lkh_08.10.2020_anzeige_concerti_124x58_du-1.jpg" alt="Affiche Benjamin Appl Daan Boertien" />
+    <img src="/assets/img/uploads/mp-reimsreisje.jpg" alt="Marc Pantus in Reimsreisje" />
     
-    <p class="">© Arnd Hoffmann</p>
-    
-  </div>
-  
-  <div class="">
-    <img src="/assets/img/uploads/mahij.jpg" alt="Muziekgebouw aan het IJ" />
+    <p class="">© Hans van den Bogaard</p>
     
   </div>
   
 </div>
 </div>
-    <section class="footer fadeIn">
+ <section class="footer fadeIn">
   <div class="container">
     <p class="">© Daan Boertien | 2021</p>
   </div>
@@ -202,6 +235,17 @@
       integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
       crossorigin="anonymous"
     ></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 
     <script src="/assets/js/hamburger.js"></script>
     <script src="/assets/js/animations.js"></script>
