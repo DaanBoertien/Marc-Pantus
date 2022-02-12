@@ -453,7 +453,7 @@ nav li, .navdesktop li { list-style: none; }
 
 .footer { text-align: center; padding: 2em; color: rgba(0, 0, 0, 0.5); }
 
-.landing { position: relative; }
+.landing { position: relative; margin-bottom: 0; }
 
 .landing-title, .landing-subtitle-container { position: absolute; color: white; }
 
@@ -465,7 +465,7 @@ nav li, .navdesktop li { list-style: none; }
 
 .landing-subtitle-container { right: 20%; top: 50%; }
 
-.quote { margin-bottom: 0; line-height: 1; font-style: italic; }
+.quote { margin-top: 1em; margin-bottom: 0; line-height: 1; font-style: italic; }
 
 .concert-poster { background-color: #f8faf8; padding: 1em; margin-left: -1em; margin-right: -1em; margin-bottom: 1em; box-shadow: var(--boxshadow); }
 
