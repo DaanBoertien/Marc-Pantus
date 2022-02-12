@@ -146,6 +146,12 @@ collections:
           - label: "Title"
             name: "title"
             widget: "string"
+          - label: "Occupation 1"
+            name: "title1"
+            widget: "string"
+          - label: "Occupation 2"
+            name: "title2"
+            widget: "string"
 
           - label: "Biografie Teaser (NL)"
             name: "bio-teaser"
