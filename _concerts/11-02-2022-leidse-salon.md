@@ -7,7 +7,7 @@ place: Leiden
 repertoire: Liederen van Nederlandse componisten op teksten van Heinrich Heine
 repertoire_en: Songs by Dutch composers on texts by Heinrich Heine
 musicians: |-
-  Marc Pantus, Bas-Bariton
+  Marc Pantus, Bas-bariton
   Daan Boertien, Piano
 musicians_en: |-
   Marc Pantus, Bass-Baritone

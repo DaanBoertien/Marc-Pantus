@@ -29,6 +29,33 @@
   top: 50%;
 }
 
+.quote {
+  margin-bottom: 0;
+  line-height: 1;
+  font-style: italic;
+}
+
+.concert-poster {
+  background-color: rgb(219, 240, 219);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.concert-date {
+  margin-bottom: 0;
+  color: var(--clr-primary);
+  font-weight: bold;
+}
+
+.concert-musicians {
+  white-space: pre;
+}
+
+.concert-hall {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  line-height: 1;
+}
 .section-image {
   position: relative;
 }
