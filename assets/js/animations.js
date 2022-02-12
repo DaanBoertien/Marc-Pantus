@@ -4,6 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsapSet('.fadeInTitle', 0)
 gsapSet('.fadeIn', 50)
+gsapSet('.fadeInVideo', 0)
 
 
 function gsapSet(className, yCoord) {
@@ -21,6 +22,7 @@ function gsapSet(className, yCoord) {
 animate(".fadeIn")
 animate(".fadeInTitle")
 animate(".fadeInNavDesktop")
+animate(".fadeInVideo")
 
 
 function animate(enterClass){
