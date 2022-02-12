@@ -42,6 +42,7 @@ nav a,
 
 .navdesktop a.navblack.current {
   color: var(--clr-primary);
+  font-weight: bold;
 }
 
 nav a::before,
@@ -73,13 +74,13 @@ nav a:focus,
 
 nav .current,
 .navdesktop .current {
-  color: var(--primary);
-  font-weight: 400;
+  color: var(--clr-primary);
+  font-weight: bold;
 }
 
 .navdesktop a.current {
-  color: var(--primary);
-  font-weight: 400;
+  color: var(--clr-primary);
+  font-weight: bold;
 }
 
 nav ul {

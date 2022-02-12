@@ -1,4 +1,4 @@
-:root { --container-width: 960px; --bg-color: rgb(255, 255, 255); --clr-secondary: rgba(99, 136, 161, 1); --clr-primary: rgb(146, 20, 20); --text-color: rgba(0, 0, 0, 0.85); --boxshadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+:root { --container-width: 960px; --bg-color: rgb(255, 255, 255); --clr-secondary: rgb(79, 112, 134); --clr-primary: rgb(7, 107, 32); --text-color: rgba(0, 0, 0, 0.85); --boxshadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; }
 
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */
@@ -411,7 +411,9 @@ body { font-family: "Open Sans Condensed", sans-serif; font-size: 1.2em; }
 
 p { line-height: 1.5; margin-bottom: 1em; }
 
-.btn { border: 2px solid var(--clr-primary); display: block; padding: 0.7em 1.5em; border-radius: 100px; font-family: inherit; display: block; text-decoration: none; width: max-content; }
+.btn { border: 2px solid var(--clr-primary); display: block; padding: 0.4em 0.8em; border-radius: 3px; font-family: inherit; display: block; text-decoration: none; width: max-content; color: black; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease-out; }
+
+.btn:hover, .btn:focus { background: var(--clr-primary); color: white; }
 
 body { position: relative; }
 
@@ -423,7 +425,7 @@ nav a, .navdesktop a { color: rgba(0, 0, 0, 0.7); background: white; text-decora
 
 .navdesktop a.navblack { color: rgba(0, 0, 0, 0.7); }
 
-.navdesktop a.navblack.current { color: var(--clr-primary); }
+.navdesktop a.navblack.current { color: var(--clr-primary); font-weight: bold; }
 
 nav a::before, .navdesktop a::before { position: absolute; content: ""; bottom: 0; left: 0; right: 0; height: 1.5px; transform: scaleX(0); transition: transform 0.3s ease-in-out; }
 
@@ -431,9 +433,9 @@ nav a:hover::before, nav a:focus::before, .navdesktop a:hover::before, .navdeskt
 
 nav a:hover, nav a:focus, .navdesktop a:hover, .navdesktop a:focus { color: var(--clr-secondary); }
 
-nav .current, .navdesktop .current { color: var(--primary); font-weight: 400; }
+nav .current, .navdesktop .current { color: var(--clr-primary); font-weight: bold; }
 
-.navdesktop a.current { color: var(--primary); font-weight: 400; }
+.navdesktop a.current { color: var(--clr-primary); font-weight: bold; }
 
 nav ul { display: flex; height: 50%; flex-direction: column; align-items: center; justify-content: space-between; }
 
