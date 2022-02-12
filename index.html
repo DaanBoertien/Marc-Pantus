@@ -3,33 +3,23 @@
 layout: landing
 ---
 
-<section class="fadeIn">
-
-    <!-- <img src="/assets/img/HierFoto.jpg" alt="" class=""> -->
-
-    
-
-      <h1 class="">Marc Pantus</h1>
 
 
-</section>
+  <section class="firstsection">
 
-
-  <section class="fadeIn">
-
-    <p class="bio-teaser fadeIn nl">
+    <div class="fadeIn">
       {{ site.data.home.bio-teaser | markdownify }}
-    </p>
+    </div>
 
     <p>
-      <a href="/biografie/" class="btn">Lees meer</a>
+      <a href="/biografie/" class="btn fadeIn">Lees meer</a>
     </p>
   
   </section>
 
-  <section class="fadeInVideo">
+  <section class="">
     <!-- Check iframe classes -->
-    <div class="iframe-container">
+    <div class="iframe-container fadeInVideo">
       <iframe class="iframe"
         width="560"
         height="315"
@@ -42,13 +32,13 @@ layout: landing
   </section>
 
 
-<section class="fadeIn">
+<section class="section-image fadeIn">
     <img
     
       src="{{ site.data.home.last-image }}"
       alt=""
     />
-    <p class="">© {{ site.data.home.photographer }}</p>
+    <p class="photographer fadeIn">© {{ site.data.home.photographer }}</p>
   </div>
   
 </section>

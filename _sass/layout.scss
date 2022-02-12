@@ -26,7 +26,11 @@ img {
 }
 
 section:first-of-type {
-  margin-top: 6em;
+  // margin-top: 6em;
+}
+
+section {
+  margin-top: 2em;
 }
 
 .container {
@@ -39,6 +43,7 @@ section:first-of-type {
   overflow: hidden;
   position: relative;
   padding-top: 56.25%;
+  margin-bottom: 1em;
   // box-shadow: var(--boxshadow);
 }
 
