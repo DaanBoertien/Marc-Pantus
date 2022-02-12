@@ -397,6 +397,8 @@
 
 html { scroll-behavior: smooth; }
 
+.fadeIn, .fadeInAppear, .fadeInTitle { opacity: 0; visibility: hidden; }
+
 img { width: 100%; display: block; }
 
 section { margin-top: 2em; }
