@@ -453,7 +453,9 @@ nav li, .navdesktop li { list-style: none; }
 
 .footer { text-align: center; padding: 2em; color: rgba(0, 0, 0, 0.5); }
 
-.landing { position: relative; margin-bottom: 0; }
+.landing { position: relative; margin-bottom: 0; height: 100vh; }
+
+.landing img { height: 100vh; object-fit: cover; object-position: 33% 50%; }
 
 .landing-title, .landing-subtitle-container { position: absolute; color: white; }
 
@@ -463,7 +465,7 @@ nav li, .navdesktop li { list-style: none; }
 
 .landing-title { top: 10%; left: 10%; font-weight: 300; font-size: 2.2em; }
 
-.landing-subtitle-container { right: 20%; top: 50%; }
+.landing-subtitle-container { right: 10%; top: 50%; }
 
 .quote { margin-top: 1em; margin-bottom: 0; line-height: 1; font-style: italic; }
 

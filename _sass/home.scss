@@ -1,6 +1,13 @@
 .landing {
   position: relative;
   margin-bottom: 0;
+  height: 100vh;
+}
+
+.landing img {
+  height: 100vh;
+  object-fit: cover;
+  object-position: 33% 50%;
 }
 
 .landing-title,
@@ -28,7 +35,7 @@
 }
 
 .landing-subtitle-container {
-  right: 20%;
+  right: 10%;
   top: 50%;
 }
 
