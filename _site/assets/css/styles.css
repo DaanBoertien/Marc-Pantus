@@ -467,6 +467,8 @@ nav li, .navdesktop li { list-style: none; }
 
 .landing-subtitle-container { right: 10%; top: 50%; }
 
+.fa-angle-down { position: absolute; color: white; left: 50%; bottom: 2em; transform: translateX(-50%); font-size: 50px; font-weight: 300; opacity: 70%; text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); }
+
 .quote { margin-top: 1em; margin-bottom: 0; line-height: 1; font-style: italic; }
 
 .concert-poster { background-color: #f8faf8; padding: 1em; margin-left: -1em; margin-right: -1em; margin-bottom: 1em; }
