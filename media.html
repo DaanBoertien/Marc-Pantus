@@ -4,32 +4,37 @@ absolute_path_nl: /media/
 absolute_path_en: /en/media/
 ---
 
-<div class="">
-  <ul class="">
-    {% for video in site.data.videos.video %}
+<section>
+  <h2>video's</h2>
+  <div class="">
+    <ul class="">
+      {% for video in site.data.videos.video %}
+      <div class="iframe-container">
+        <li class="youtube-list">
+          <iframe
+            class="iframe iframe-media"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/{{video.youtube-id}}"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </li>
+      </div>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<section>
+  <h2>foto's</h2>
+  <div class="">
+    {% for photo in site.data.photos.foto %}
     <div class="">
-      <li class="">
-        <iframe
-          class=""
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/{{video.youtube-id}}"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </li>
+      <img src="{{photo.url}}" alt="{{photo.alt}}" />
+      {% if photo.photographer %}
+      <p class="">© {{photo.photographer}}</p>
+      {% endif %}
     </div>
     {% endfor %}
-  </ul>
-</div>
-
-<div class="">
-  {% for photo in site.data.photos.foto %}
-  <div class="">
-    <img src="{{photo.url}}" alt="{{photo.alt}}" />
-    {% if photo.photographer %}
-    <p class="">© {{photo.photographer}}</p>
-    {% endif %}
   </div>
-  {% endfor %}
-</div>
+</section>

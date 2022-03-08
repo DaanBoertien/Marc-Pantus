@@ -10,7 +10,7 @@ absolute_path_en: /en/concerts/
 
   {% assign future_concerts = site.concerts | where_exp: "concert",
   "concert.date >= site.time" %} {% for concert in future_concerts %}
-  <div class="concert-poster">
+  <div class="concert-poster-page">
     <div class="concert-datetime">
       <p class="concert-date">{{concert.date | date: "%e-%m-%Y"}}</p>
       <!-- Separate date and time -->
@@ -38,7 +38,7 @@ absolute_path_en: /en/concerts/
   {% assign past_concerts = site.concerts | where_exp: "concert", "concert.date
   < site.time" | reverse %} {% for concert in past_concerts %} {% if
   concert.in_archive == true %}
-  <div class="concert-poster fadeIn">
+  <div class="concert-poster-page fadeIn">
     <div class="archive">
       <div class="concert-datetime">
         <p class="concert-date">{{concert.date | date: "%e-%m-%Y" }}</p>

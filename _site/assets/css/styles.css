@@ -413,7 +413,7 @@ body { font-family: "Open Sans Condensed", sans-serif; font-size: 1.2em; }
 
 p { line-height: 1.5; margin-bottom: 1em; }
 
-h2 { line-height: 1.2; font-weight: 300; color: var(--clr-primary); margin-bottom: 1em; font-size: 2em; }
+h2, h1 { line-height: 1.2; font-weight: 300; color: var(--clr-primary); margin-bottom: 1em; font-size: 2em; }
 
 .btn { border: 1px solid var(--clr-primary); display: block; padding: 0.4em 0.8em; border-radius: 3px; font-family: inherit; font-size: inherit; display: block; text-decoration: none; width: max-content; color: black; text-transform: lowercase; transition: all 0.3s ease-out; }
 
@@ -473,6 +473,8 @@ nav li, .navdesktop li { list-style: none; }
 
 .concert-poster { background-color: #f8faf8; padding: 1em; margin-left: -1em; margin-right: -1em; margin-bottom: 1em; }
 
+.concert-poster-page { background-color: #f8faf8; padding: 1em; margin-left: 0em; margin-right: 0em; margin-bottom: 1em; }
+
 .concert-date { margin-bottom: 0; color: var(--clr-primary); font-weight: bold; }
 
 .concert-musicians { white-space: pre; }
@@ -485,11 +487,15 @@ nav li, .navdesktop li { list-style: none; }
 
 .section-image { margin-bottom: 1em; }
 
+.youtube-list { list-style: none; }
+
+.iframe-container { margin-bottom: 1em; }
+
 form { display: flex; flex-direction: column; margin-top: 2em; margin-bottom: 2em; max-width: 500px; }
 
-button[type="submit"], input, textarea { font-family: inherit; font-weight: inherit; font-size: inherit; border: 0; border-radius: 5px; }
+button[type="submit"], input, textarea { font-family: inherit; font-weight: inherit; font-size: inherit; border-radius: 5px; }
 
-input, textarea { padding: 1em; margin-bottom: 1.5em; }
+input, textarea { padding: 1em; margin-bottom: 1.5em; border: 1px solid var(--clr-primary); }
 
 textarea { margin-bottom: 2em; resize: vertical; min-height: 100px; }
 
