@@ -1,0 +1,30 @@
+---
+layout: container
+absolute_path_nl: /donquichot/
+absolute_path_en: /en/donquixote/
+---
+
+<div class="donquichotbg">
+  <section>
+    <h2>don quichot</h2>
+    <div class="">
+      <ul class="">
+        {% for video in site.data.donquichot.video %}
+        <p class="don-quichot-title">{{video.title}}</p>
+        <div class="iframe-container">
+          <li class="youtube-list">
+            <iframe
+              class="iframe iframe-media"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/{{video.youtube-id}}"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </li>
+        </div>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</div>
