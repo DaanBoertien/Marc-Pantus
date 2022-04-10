@@ -257,12 +257,15 @@ collections:
               - label: "YouTube Id"
                 name: "youtube-id"
                 widget: "string"
+                required: false
               - label: "Foto"
                 name: "url"
                 widget: "image"
+                required: false
               - label: "Fotograaf"
                 name: "photographer"
                 widget: "string"
+                required: false
       - name: "donquichot"
         label: "Don Quichot"
         file: "_data/donquichot.yml"
