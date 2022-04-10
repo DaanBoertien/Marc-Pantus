@@ -1,8 +1,4 @@
 project:
-  - title-nl: Project 3
-    title-en: Project 3
-    info-nl: Info NL
-    info-en: Info EN
   - title-nl: Coco Collectief Winterreise
     title-en: Coco Collective Winterreise
     info-nl: Hier komt tekst over het project.
@@ -16,4 +12,8 @@ project:
     youtube-id: QBG4L1_dCqQ
     url: null
     photographer: Dawasiknie
+    info-en: Info EN
+  - title-nl: Project 3
+    title-en: Project 3
+    info-nl: Info NL
     info-en: Info EN
