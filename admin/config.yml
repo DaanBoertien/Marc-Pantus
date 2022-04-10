@@ -230,3 +230,58 @@ collections:
           - label: "Content EN"
             name: "content-en"
             widget: "string"
+      - name: "regie"
+        label: "Regie"
+        file: "_data/regie.yml"
+        editor:
+          preview: false
+        fields:
+           - label: "Projecten"
+            label_singular: "Project"
+            name: "project"
+            widget: "list"
+            add_to_top: true
+            fields:
+              - label: "Titel (NL)"
+                name: "title-nl"
+                widget: "string"
+              - label: "Titel (EN)"
+                name: "title-en"
+                widget: "string"
+              - label: "Info (NL)"
+                name: "title-nl"
+                widget: "text"
+              - label: "Info (EN)"
+                name: "title-en"
+                widget: "text"
+              - label: "YouTube Id"
+                name: "youtube-id"
+                widget: "string"
+              - label: "Foto"
+                name: "url"
+                widget: "image"
+              - label: "Fotograaf"
+                name: "photographer"
+                widget: "string"
+      - name: "donquichot"
+        label: "Don Quichot"
+        file: "_data/donquichot.yml"
+        editor:
+          preview: false
+        fields:
+           - label: "Hoofdstukken"
+            label_singular: "Hoofdstuk"
+            name: "video"
+            widget: "list"
+            add_to_top: true
+            fields:
+              - label: "Titel (NL)"
+                name: "title"
+                widget: "string"
+              - label: "Titel (EN)"
+                name: "title-en"
+                widget: "string"
+                widget: "text"
+              - label: "YouTube Id"
+                name: "youtube-id"
+                widget: "string"

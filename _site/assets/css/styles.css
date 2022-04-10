@@ -515,7 +515,7 @@ input[type="submit"] { padding: 0.75em 0; letter-spacing: 1px; text-transform: u
 
 .thank-you { margin-top: 2.5em; }
 
-@media (min-width: 706px) { .landing-title { top: 10%; left: 10%; font-weight: 300; font-size: 3em; } .landing-subtitle-container { right: 20%; top: 60%; font-size: 1.5em; } .section-image, .media-photos { width: 50%; margin-inline: auto; } }
+@media (min-width: 706px) { .landing-title { top: 10%; left: 10%; font-weight: 300; font-size: 3em; } .landing-subtitle-container { right: 20%; top: 60%; font-size: 1.5em; } .section-image, .media-photos, .project-photos { width: 50%; margin-inline: auto; } }
 
 @media (min-width: 825px) { .landing-subtitle-container { top: 70%; } }
 

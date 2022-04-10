@@ -24,6 +24,14 @@ absolute_path_en: /en/directing/
             ></iframe>
           </li>
         </div>
+        {% if project.url %}
+        <div class="project-photos">
+          <img src="{{project.url}}" alt="{{project.alt}}" />
+          {% if project.photographer %}
+          <p class="">© {{project.photographer}}</p>
+          {% endif %}
+        </div>
+        {% endif %}
       </div>
       {% endfor %}
     </ul>
