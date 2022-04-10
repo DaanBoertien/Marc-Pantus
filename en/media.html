@@ -25,7 +25,7 @@ absolute_path_en: /en/media/
 
 <div class="">
   {% for photo in site.data.photos.foto %}
-  <div class="">
+  <div class="media-photos">
     <img src="{{photo.url}}" alt="{{photo.alt}}" />
     {% if photo.photographer %}
     <p class="">© {{photo.photographer}}</p>

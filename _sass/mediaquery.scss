@@ -1,85 +1,72 @@
-// @media (min-width: 490px) {
-//   .video-container img {
-//     object-position: right 0px;
-//   }
-// }
+//Landing
 
-// @media (min-width: 600px) {
-//   .video-container video {
-//     object-position: 0px bottom;
-//   }
+@media (min-width: 706px) {
+  .landing-title {
+    top: 10%;
+    left: 10%;
+    font-weight: 300;
+    font-size: 3em;
+  }
 
-//   .fa-angle-down {
-//     bottom: 1em;
-//   }
+  .landing-subtitle-container {
+    right: 20%;
+    top: 60%;
+    font-size: 1.5em;
+  }
 
-//   .video-container img.imgsmall {
-//     display: none;
-//   }
+  .section-image,
+  .media-photos {
+    width: 50%;
+    margin-inline: auto;
+  }
+}
 
-//   .video-container img.imglarge {
-//     display: block;
-//   }
-// }
+@media (min-width: 825px) {
+  .landing-subtitle-container {
+    top: 70%;
+  }
+}
+@media (min-width: 880px) {
+  .landing-title {
+    top: 15%;
+    left: 50%;
 
-// @media (min-width: 800px) {
-//   body {
-//     font-size: 1.25rem;
-//   }
-//   .video-container video {
-//     object-position: 0px bottom;
-//   }
-//   .video-container::before {
-//     background-position: 0px bottom;
-//   }
+    font-size: 3.5em;
+  }
 
-//   .section-quote {
-//     font-size: 1.25rem;
-//   }
+  .landing-subtitle-container {
+    // right: 20%;
+    top: 75%;
+    // font-size: 1.5em;
+  }
+}
 
-//   .bio-box {
-//     border-left: 10px solid var(--clr-greyblue);
-//     padding: 2em;
-//   }
-//   .all-photos {
-//     column-count: 2;
-//     -webkit-column-count: 2;
-//     -moz-column-count: 2;
+@media (min-width: 1220px) {
+  .landing-title {
+    top: 20%;
+    left: 50%;
 
-//     column-gap: 1.5em;
-//     -webkit-column-gap: 1.5em;
-//     -moz-column-gap: 1.5em;
-//     img {
-//       cursor: pointer;
-//     }
-//   }
-// }
+    font-size: 4em;
+  }
 
+  .landing-subtitle-container {
+    right: 10%;
+    top: 75%;
+    // font-size: 1.5em;
+  }
+}
+
+//Rest of site
 @media (max-width: 880px) {
   .navcontainer {
     display: none;
   }
-
-  // .video-container .landing-title-container {
-  //   top: 30%;
-  // }
 }
 
 @media (min-width: 880px) {
-  //   .video-grid {
-  //     display: grid;
-  //     grid-gap: 2rem;
-
-  //     /* Partially responsive fallback */
-  //     // grid-template-columns: repeat(auto-fill, minmax(calc(10% + 7.5rem), 1fr));
-
-  //     /* Fully responsive version */
-  //     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  //   }
-  //   .media-video-margin {
-  //     margin-bottom: 0;
-  //   }
-
+  h1 {
+    margin-top: 3em;
+  }
   .hamburger-container {
     display: none;
   }
@@ -130,40 +117,3 @@
   //   }
   // }
 }
-
-// @media (min-width: 1063px) {
-//   .hamburger {
-//     right: 0;
-//   }
-//   .section-quote {
-//     overflow: visible;
-//   }
-
-//   .video-container .landing-title-container {
-//     left: 30%;
-//   }
-
-//   .container {
-//     padding: 0;
-//   }
-
-//   .flex {
-//     display: flex;
-//     gap: 2em;
-//   }
-
-//   .concert-hall {
-//     font-size: 2rem;
-//   }
-
-//   .concert-location {
-//     padding: 2em;
-//   }
-//   .concert-datetime {
-//     padding-left: 2em;
-//   }
-
-//   .concert-musicians {
-//     margin-bottom: 1em;
-//   }
-// }

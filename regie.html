@@ -5,9 +5,27 @@ absolute_path_en: /en/directing/
 ---
 
 <section>
-  <h1>Regie</h1>
-  <p>
-    Hier komt informatie over regie, misschien wat foto's en youtubevideo's?
-    Moeten we het over hebben.
-  </p>
+  <h1>regie</h1>
+  <div class="">
+    <ul class="">
+      {% for project in site.data.regie.project %}
+      <div class="margin-bottom-two">
+        <h2>{{project.title-nl}}</h2>
+        <p>{{project.info-nl}}</p>
+        <div class="iframe-container">
+          <li class="youtube-list">
+            <iframe
+              class="iframe iframe-media"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/{{project.youtube-id}}"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </li>
+        </div>
+      </div>
+      {% endfor %}
+    </ul>
+  </div>
 </section>

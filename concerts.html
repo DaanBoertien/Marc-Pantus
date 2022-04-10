@@ -6,7 +6,7 @@ absolute_path_en: /en/concerts/
 ---
 
 <section>
-  <h1 class="">Agenda</h1>
+  <h1 class="">agenda</h1>
 
   {% assign future_concerts = site.concerts | where_exp: "concert",
   "concert.date >= site.time" %} {% for concert in future_concerts %}
