@@ -276,7 +276,7 @@ collections:
             label_singular: "Hoofdstuk"
             name: "video"
             widget: "list"
-            add_to_top: true
+            add_to_top: false
             fields:
               - label: "Titel (NL)"
                 name: "title"
