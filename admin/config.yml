@@ -153,10 +153,10 @@ collections:
             name: "title2"
             widget: "string"
           - label: "Occupation 1 (EN)"
-            name: "title1"
+            name: "title1-en"
             widget: "string"
           - label: "Occupation 2 (EN)"
-            name: "title2"
+            name: "title2-en"
             widget: "string"
 
           - label: "Biografie Teaser (NL)"
