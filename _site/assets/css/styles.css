@@ -419,6 +419,8 @@ p { line-height: 1.5; margin-bottom: 1em; }
 
 h2, h1 { line-height: 1.2; font-weight: 300; color: var(--clr-primary); margin-bottom: 1em; font-size: 2em; }
 
+.stage-title { font-size: 1.5em; }
+
 .btn { border: 1px solid var(--clr-primary); display: block; padding: 0.4em 0.8em; border-radius: 3px; font-family: inherit; font-size: inherit; display: block; text-decoration: none; width: max-content; color: black; text-transform: lowercase; transition: all 0.3s ease-out; }
 
 .btn:hover, .btn:focus { background: var(--clr-primary); color: white; }
