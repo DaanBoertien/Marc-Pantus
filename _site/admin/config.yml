@@ -152,7 +152,7 @@ collections:
           - label: "Occupation 2 (NL)"
             name: "title2"
             widget: "string"
-          - label: "Occupation 1 (EN)
+          - label: "Occupation 1 (EN)"
             name: "title1"
             widget: "string"
           - label: "Occupation 2 (EN)"
