@@ -12,24 +12,11 @@
       rel="stylesheet"
     />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Add Google analytics! -->
-    <script async src=""></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-135437368-1");
-    </script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body {% if page.url !="/" %}class="border-top" {% endif %}>
-    {% include nav_en.html %}{% include navdesktop_en.html %}
-    <div class="container">{{content }}</div>
-    {% include footer.html %}
+    {% include nav_en.html %}{% include navdesktop_en.html %} {{content }} {%
+    include footer.html %}
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="

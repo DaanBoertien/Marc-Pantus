@@ -1,0 +1,40 @@
+---
+layout: container_en
+absolute_path_nl: /regie/
+absolute_path_en: /en/directing/
+---
+
+<section>
+  <h1>stage directing</h1>
+  <div class="">
+    <ul class="">
+      {% for project in site.data.regie.project %}
+      <div class="margin-bottom-two">
+        <h2>{{project.title-en}}</h2>
+        <p>{{project.info-en}}</p>
+        {% if project.youtube-id %}
+        <div class="iframe-container">
+          <li class="youtube-list">
+            <iframe
+              class="iframe iframe-media"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/{{project.youtube-id}}"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </li>
+        </div>
+        {% endif %} {% if project.url %}
+        <div class="project-photos">
+          <img src="{{project.url}}" alt="{{project.alt}}" />
+          {% if project.photographer %}
+          <p class="">© {{project.photographer}}</p>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

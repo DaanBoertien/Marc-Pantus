@@ -146,10 +146,16 @@ collections:
           - label: "Title"
             name: "title"
             widget: "string"
-          - label: "Occupation 1"
+          - label: "Occupation 1 (NL)"
             name: "title1"
             widget: "string"
-          - label: "Occupation 2"
+          - label: "Occupation 2 (NL)"
+            name: "title2"
+            widget: "string"
+          - label: "Occupation 1 (EN)
+            name: "title1"
+            widget: "string"
+          - label: "Occupation 2 (EN)"
             name: "title2"
             widget: "string"
 

@@ -1,60 +1,79 @@
 ---
 # front matter tells Jekyll to process Liquid
-layout: default_en
+layout: landing_en
 absolute_path_nl: /
 absolute_path_en: /en/
 ---
 
-<section class="fadeIn">
+<p class="quote" id="quote">{{site.data.home.quote-en}}</p>
+<p>{{site.data.home.quote-author-en}}</p>
 
-    <!-- <img src="/assets/img/HierFoto.jpg" alt="" class=""> -->
+<section class="concert-preview">
+  <h2 class="section-title">next concert</h2>
 
-    
-
-      <h1 class="">Daan Boertien</h1>
-
-
-</section>
-
-
-  <section class="fadeIn">
-
-    <p class="bio-teaser fadeIn nl">
-      {{ site.data.home.bio-teaser-en | markdownify }}
-    </p>
-
-    <p>
-      <a href="/biografie/" class="btn">Lees meer</a>
-    </p>
-  
-  </section>
-
-  <section class="fadeIn">
-    <!-- Check iframe classes -->
-    <div class="iframe-container">
-      <iframe class="iframe"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/{{site.data.home.youtube-id}}"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
+  {% assign future_concerts = site.concerts | where_exp: "concert",
+  "concert.date >= site.time" %} {% for concert in future_concerts limit:1 %}
+  <div class="concert-poster fadeIn">
+    <div class="concert-datetime">
+      <p class="concert-date">{{concert.date | date: "%e-%m-%Y"}}</p>
+      <p class="concert-time">{{concert.date | date: "%k:%M" }}</p>
     </div>
-    <a href="/media/" class="btn">Meer video's</a>
-  </section>
-
-
-<section class="fadeIn">
-    <img
-    
-      src="{{ site.data.home.last-image }}"
-      alt=""
-    />
-    <p class="">© {{ site.data.home.photographer }}</p>
+    <div class="concert-location">
+      <p class="concert-hall">
+        {% if concert.hall_en %}{{concert.hall_en}}{% else %} {{concert.hall}}{%
+        endif %}
+      </p>
+      <p class="concert-place">
+        {% if concert.place_en %}{{concert.place_en}}{% else %}
+        {{concert.place}}{% endif %}
+      </p>
+      <p class="concert-repertoire">
+        {% if concert.repertoire_en %}{{concert.repertoire_en}}{% else %}
+        {{concert.repertoire}}{% endif %}
+      </p>
+      <p class="concert-musicians">{{concert.musicians_en}}</p>
+      {% if concert.organizer_url %}
+      <p class="concert-tickets">
+        <a href="{{concert.organizer_url}}" target="_blank" class="btn"
+          >tickets</a
+        >
+      </p>
+      {% endif %} {% if concert.cancelled %}
+      <p class="concert-cancelled">cancelled</p>
+      {% endif %}
+    </div>
   </div>
-  
+  {% endfor %}
+  <a href="/en/concerts/" class="btn fadeInAppear">more concerts</a>
 </section>
 
+<section class="">
+  <h2 class="section-title">biografy</h2>
+  <div class="fadeIn">{{ site.data.home.bio-teaser-en | markdownify }}</div>
 
+  <p>
+    <a href="/en/biografy/" class="btn fadeInAppear">read more</a>
+  </p>
+</section>
 
+<section class="">
+  <!-- Check iframe classes -->
+  <div class="iframe-container fadeInAppear">
+    <iframe
+      class="iframe"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/{{site.data.home.youtube-id}}"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <p class="video-caption fadeIn">{{site.data.home.video-caption-en}}</p>
+  <a href="/media/" class="btn fadeIn">more videos</a>
+</section>
 
+<section class="section-image fadeIn">
+  <img src="{{ site.data.home.last-image }}" alt="" />
+  <p class="photographer fadeInAppear">© {{ site.data.home.photographer }}</p>
+</section>
+<a href="/media/" class="btn fadeIn">more photographs</a>

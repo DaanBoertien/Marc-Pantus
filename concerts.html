@@ -34,7 +34,7 @@ absolute_path_en: /en/concerts/
   </div>
   {% endfor %}
 
-  <h2 class="">Archief</h2>
+  <h2 class="">archief</h2>
   {% assign past_concerts = site.concerts | where_exp: "concert", "concert.date
   < site.time" | reverse %} {% for concert in past_concerts %} {% if
   concert.in_archive == true %}
