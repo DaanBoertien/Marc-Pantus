@@ -24,3 +24,12 @@ h1 {
 .stage-title {
   font-size: 1.5em;
 }
+
+.staging a {
+  color: var(--clr-primary);
+  transition: all 0.2s ease-out;
+}
+
+.staging a:hover {
+  filter: brightness(1.4);
+}

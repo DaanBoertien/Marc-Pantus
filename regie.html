@@ -1,17 +1,17 @@
 ---
 layout: container
 absolute_path_nl: /regie/
-absolute_path_en: /en/directing/
+absolute_path_en: /en/staging/
 ---
 
-<section>
+<section class="staging">
   <h1>regie</h1>
   <div class="">
     <ul class="">
       {% for project in site.data.regie.project %}
       <div class="margin-bottom-two">
-        <h2 class="stage.title">{{project.title-nl}}</h2>
-        <p>{{project.info-nl}}</p>
+        <h2 class="stage-title">{{project.title-nl}}</h2>
+        <p>{{project.info-nl | markdownify}}</p>
         {% if project.youtube-id %}
         <div class="iframe-container">
           <li class="youtube-list">
