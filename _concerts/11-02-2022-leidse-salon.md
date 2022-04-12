@@ -1,17 +1,24 @@
 ---
 layout: concert
-hall: Leidse Salon
-hall_en: Leiden Saloon and Buffoon
-date: 2022-05-23T19:15:59.031Z
-place: Leiden
-repertoire: Liederen van Nederlandse componisten op teksten van Heinrich Heine
-repertoire_en: Songs by Dutch composers on texts by Heinrich Heine
+hall: Parktheater Eindhoven
+hall_en: Parktheater Eindhoven
+date: 2022-05-22T17:00:59.031Z
+place: Eindhoven
+repertoire: |
+  Benjamin Britten
+  A Midsummer Night’s Dream.
+  Rol: Bottom
+repertoire_en: |
+  Benjamin Britten
+  A Midsummer Night’s Dream.
+  Role: Bottom
 musicians: |-
-  Marc Pantus, Bas-bariton
-  Daan Boertien, Piano
-musicians_en: |-
-  Marc Pantus, Bass-Baritone
-  Daan Boertien, Piano
+  Opera Zuid
+  Regie Ola Mafaalani
+  Muzikale Leiding Karel Deseure
+  Philharmonie zuidnederland 
+musicians_en: ""
+organizer_url: https://www.parktheater.nl/nl/programma/10596/Opera_Zuid/A_Midsummer_Night%27s_Dream
 in_archive: true
 cancelled: false
 ---
