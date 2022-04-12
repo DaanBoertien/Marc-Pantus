@@ -2,7 +2,7 @@
 layout: concert
 hall: Parktheater Eindhoven
 hall_en: Parktheater Eindhoven
-date: 2022-05-20T05:25:37.903Z
+date: 2022-05-20T17:00:37.903Z
 place: Eindhoven
 repertoire: |
   Benjamin Britten
