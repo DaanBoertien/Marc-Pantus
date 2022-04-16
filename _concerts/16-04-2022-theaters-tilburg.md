@@ -3,7 +3,7 @@ layout: concert
 hall: "Theaters Tilburg "
 hall_en: ""
 date: 2022-05-31T17:30:21.306Z
-place: Heerlen
+place: Tilburg
 repertoire: |
   Benjamin Britten
   A Midsummer Night’s Dream.
