@@ -3,7 +3,7 @@ layout: concert
 hall: Internationaal Theater Amsterdam
 hall_en: International Theater Amsterdam
 date: 2022-05-26T17:30:13.084Z
-place: Eindhoven
+place: Amsterdam
 repertoire: |
   Benjamin Britten
   A Midsummer Night’s Dream.
