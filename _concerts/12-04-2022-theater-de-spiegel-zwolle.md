@@ -7,6 +7,7 @@ place: Eindhoven
 repertoire: |
   Benjamin Britten
   A Midsummer Night’s Dream.
+
   Rol: Bottom
 repertoire_en: |-
   Benjamin Britten
