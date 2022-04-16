@@ -3,7 +3,7 @@ layout: concert
 hall: Stadsschouwburg Utrecht
 hall_en: ""
 date: 2022-06-11T17:30:18.461Z
-place: Venlo
+place: Utrecht
 repertoire: |
   Benjamin Britten
   A Midsummer Night’s Dream.
