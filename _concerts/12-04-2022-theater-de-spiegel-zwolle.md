@@ -3,7 +3,7 @@ layout: concert
 hall: Theater De Spiegel Zwolle
 hall_en: ""
 date: 2022-05-24T17:30:42.555Z
-place: Eindhoven
+place: Zwolle
 repertoire: |
   Benjamin Britten
   A Midsummer Night’s Dream.
