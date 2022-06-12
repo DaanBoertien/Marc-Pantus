@@ -13,5 +13,5 @@ musicians_en: |-
   Marc Pantus, Bass-Baritone
   Daan Boertien, Piano
 in_archive: true
-cancelled: false
+cancelled: true
 ---
