@@ -1,7 +1,7 @@
 ---
 layout: concert
 hall: "Cenakelkerk, Heilig Landstichting "
-date: 2022-08-18T18:00:06.421Z
+date: 2022-08-20T18:00:06.421Z
 place: Heilig Landstichting (bij Nijmegen)
 repertoire: "Richard Wagner: Parsifal acte 3"
 repertoire_en: "Richard Wagner: Parsifal act 3"
@@ -12,7 +12,7 @@ musicians: |-
   Wilbert Friederichs, Amfortas (zwijgend)
 
   Tommy van Doorn, Harmonium
-  Charlie Bo Meijering, piano
+  Daan Boertien, piano
   Andrea Friggi, synthesizer 
   Merlijn Runia, basgitaar
   Wilbert Friederichs, koorleider
