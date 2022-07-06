@@ -1,7 +1,7 @@
 ---
 layout: concert
 hall: "Cenakelkerk, Heilig Landstichting "
-date: 2022-08-12T19:00:06.186Z
+date: 2022-08-12T18:00:06.186Z
 place: Heilig Landstichting (bij Nijmegen)
 repertoire: "Richard Wagner: Parsifal acte 3"
 repertoire_en: "Richard Wagner: Parsifal act 3"
