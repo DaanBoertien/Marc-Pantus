@@ -21,7 +21,7 @@ musicians: |-
   Regie en vormgeving: Marc Pantus en Merlijn Runia 
   Muzikale leiding: Andrea Friggi 
   Bewerking: Hugo Bouma
-organizer_url: www.parsifal3.nl
+organizer_url: https://parsifal3.nl/
 in_archive: true
 cancelled: false
 ---
