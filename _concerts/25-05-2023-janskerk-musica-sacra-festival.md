@@ -1,27 +1,21 @@
 ---
 layout: concert
-hall: Janskerk, Musica Sacra Festival
-date: 2023-09-17T13:30:57.406Z
-place: Maastricht
-repertoire: "Richard Wagner: Parsifal acte 3"
-repertoire_en: "Richard Wagner: Parsifal act 3"
+hall: Turnhal Avegoor, Zoom Festival
+date: 2023-06-02T13:00:57.406Z
+place: Ellecom
+repertoire: LUDMILLA of LIJKEN AAN DE LOPENDE BAND, Erich Ziegler & Willy Rosen
+repertoire_en: ""
 musicians: |-
-  Frank van Aken, Parsifal
-  Merlijn Runia, Kundry
-  Marc Pantus, Gurnemanz / Amfortas
-  Wilbert Friederichs, Amfortas (zwijgend)
-
-  Dirk Luijmes, Harmonium
-  Daan Boertien, piano
-  Andrea Friggi, synthesizer 
-  Merlijn Runia, basgitaar
-  Wilbert Friederichs, koorleider
-  Parsifal Projectkoor
-
-  Regie en vormgeving: Marc Pantus en Merlijn Runia 
-  Muzikale leiding: Andrea Friggi 
-  Bewerking: Hugo Bouma
-organizer_url: https://www.musicasacramaastricht.nl/
+  Marc Pantus, bariton
+  Merlijn Runia, sopraan
+  Jan Willem Baljet, bariton
+  Marcel Worms, piano
+  Michael Müller, cello
+  Emi Ohi Resnick, viool
+  Krijn ter Braak, stem
+  Olga Zuiderhoek, stem
+  Eva Buchmann, regie
+organizer_url: https://www.zoomfestival.nl/programma/kameropera-ludmilla/
 in_archive: true
 cancelled: false
 ---
