@@ -1,7 +1,7 @@
 ---
 layout: concert
 hall: "Parktheater "
-date: 2023-11-10T19:00:25.882Z
+date: 2023-11-10T18:00:25.882Z
 place: Eindhoven
 repertoire: Mozart, der Schauspieldirektor (Buff)
 musicians: >-
