@@ -5,10 +5,10 @@ date: 2024-12-19T19:00:06.836Z
 place: Den Haag
 repertoire: |-
   Johann Sebastian Bach,
-  Herz und Mund und Tat und Leben (BWV 147A)
+  Herz und Mund und Tat und Leben (BWV 147A),
   Unser Mund sei voll Lachens (BWV 110)
-
-  George Frideric Handel
+  &
+  George Frideric Handel,
   Deel 1 uit Messiah
 musicians: |
   Residentie Kamerkoor
