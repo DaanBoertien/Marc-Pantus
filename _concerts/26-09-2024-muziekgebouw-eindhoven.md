@@ -4,7 +4,7 @@ hall: Muziekgebouw Eindhoven
 date: 2025-04-02T17:30:52.915Z
 place: Eindhoven
 repertoire: |-
-  J.S. Bach
+  J.S. Bach,
   Matthäus Passion - Christus
 musicians: |-
   Philips’ Philharmonisch Koor
