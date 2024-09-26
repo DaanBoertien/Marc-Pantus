@@ -4,7 +4,7 @@ hall: MIRY Concertzaal
 date: 2025-01-26T17:00:24.668Z
 place: Gent, België
 repertoire: |-
-  George Frideric Handel
+  George Frideric Handel,
 
   The Triumph of Time and Truth
 musicians: |-
